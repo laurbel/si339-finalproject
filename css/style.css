@@ -64,10 +64,16 @@ footer{
 }
 
 .footer-item a{
-  text-decoration: none;
   color:#242525;
   font-weight: 600px;
-  padding: 3px #c1c1c1
+  padding: 3px #c1c1c1;
+  font-family: 'Aerial';
+}
+
+.footer-header{
+  font-family: 'Aerial';
+  font-size: 20px;
+  text-align: center;
 }
 
 header{
