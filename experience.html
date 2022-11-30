@@ -21,25 +21,75 @@
     </header>
 
     <main id = 'container'>
-        <h1>My experiences</h1>
+        <h1>My Experiences</h1>
+        <div class= 'flex-container'>
+        
+        <div>
         <img src = "images/reach.png" width="200" alt = "reach consulting group logo">
-        <p>I am a consultant and client liason in Reach Consulting group here at U of M. </p>
+        <button onclick="myFunction('DIV_one')">Click Here for More</button>
+        <p id='DIV_one'>I am a consultant and client liason in Reach Consulting group here at U of M. </p>
+        </div>
+
+        <div>
         <img src = "images/girlswhocode_college.png" width="200" alt = "girls who code logo">
-        <p>I am also an active memebr of girls who code on campus</p>
+        <button onclick="myFunction('DIV_two')">Click Here for More</button>
+        <p id='DIV_two'>I am also an active memebr of girls who code on campus</p>
+        </div>
+
+        <div>
         <img src = "images/collegecakepops.jpg" width="200" alt = "college cake pops logo">
-        <p>I currently am the Social Media Manager of College Cake Pops LLC.</p>
+        <button onclick="myFunction('DIV_three')">Click Here for More</button>
+        <p id='DIV_three'>I currently am the Social Media Manager of College Cake Pops LLC.</p>
+        </div>
+
+        <div>
         <img src = "images/wise.jpg" width="200" alt = "women in science and engineering logo">
-        <p>In high school, I was the president of the Women in Science and Engineering club</p>
+        <button onclick="myFunction('DIV_four')">Click Here for More</button>
+        <p id='DIV_four'>In high school, I was the president of the Women in Science and Engineering club</p>
+        </div>
+
+        <div>
         <img src = "images/keyclub.png" width="200" alt = "keyclub logo">
-        <p>I was also the president of key club in high school</p>
+        <button onclick="myFunction('DIV_five')">Click Here for More</button>
+        <p id='DIV_five'>I was also the president of key club in high school</p>
+        </div>
+
+        <div>
         <img src = "images/friendship_circle.png" width="200" alt = "friendship circle logo">
-        <p>Selected to leadership council to plan and implement educational events, charity fundraisers and youth programming for 200 students with special needs</p>
+        <button onclick="myFunction('DIV_six')">Click Here for More</button>
+        <p id='DIV_six'>Selected to leadership council to plan and implement educational events, charity fundraisers and youth programming for 200 students with special needs</p>
+        </div>
+
+        <div>
         <img src = "images/aephi.png" width="200" alt = "aephi logo">
-        <p>Here at Michigan, I am a member of the sorority alpha epsion phi. In my sorority I am the technology chair of our recruitment team</p>
+        <button onclick="myFunction('DIV_seven')">Click Here for More</button>
+        <p id='DIV_seven'>Here at Michigan, I am a member of the sorority alpha epsilon phi. In my sorority I am the technology chair of our recruitment team</p>
+        </div>
+        
+        <div>
         <img src = "images/trailsend.jpg" width="200" alt = "trails end camp logo">
-        <p>Over the summer, I was Employed as a counselor at Trails End Camp</p>
+        <button onclick="myFunction('DIV_eight')">Click Here for More</button>
+        <p id='DIV_eight'>Over the summer, I was Employed as a counselor at Trails End Camp</p>
+        </div>
+
+        <div>
         <img src = "images/park.jpg" width="200" alt = "photo of a US national park">
-        <p>One coding project I've worked on draws conclusioins about United States parks. It is starred on my github page</p>
+        <button onclick="myFunction('DIV_nine')">Click Here for More</button>
+        <p id='DIV_nine'>One coding project I've worked on draws conclusioins about United States parks. It is starred on my github page</p>
+        </div>
+
+        </div>
     </main>
 </body>
 </html>
+
+<script>
+    function myFunction(source_id) {
+  var x = document.getElementById(source_id);
+  if (x.style.visibility === "hidden") {
+    document.getElementById(source_id).style.visibility = "visible";
+  } else {
+    document.getElementById(source_id).style.visibility = "hidden";
+  }
+}
+</script>
