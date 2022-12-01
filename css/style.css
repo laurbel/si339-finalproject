@@ -200,7 +200,7 @@ h2{
 }
 
   
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 768px){
   body{
     background-color: #dabfde;
   }
@@ -270,14 +270,19 @@ h2{
   }
 }
 
-@media only screen and (min-width: 1280px){
+@media only screen and (min-width: 1024px){
   body{
     background-color: #c1bbdd;
   }
 
   .grid-container{
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
+    justify-items: center;
   } 
+
+  .grid-container div{
+    padding: 5px;
+  }
 
   .flex-container{
     flex-direction:row;
