@@ -115,11 +115,17 @@ header{
 .grid-container{
   display: grid;
   grid-template-columns: auto;
+  justify-items: center;
 }
 
 .grid-item img{
   justify-content: center;
   align-items: center;
+  width: 250px;
+}
+
+.grid-item p{
+  visibility: hidden;
 }
 
 
@@ -225,7 +231,18 @@ h2{
 
   .grid-container{
     grid-template-columns: auto auto;
+    justify-items: start;
+    justify-content: space-evenly;
   } 
+
+  .grid-item img{
+    width: 200px;
+  }
+
+  .grid-item p{
+    visibility: visible;
+    text-align: center;
+  }
 
   .flex-container{
     flex-direction:row;
