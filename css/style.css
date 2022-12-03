@@ -112,6 +112,10 @@ header{
   padding: 5px;
 }
 
+.flex-container div a{
+  visibility: hidden;
+}
+
 .grid-container{
   display: grid;
   grid-template-columns: auto;
@@ -264,6 +268,10 @@ h2{
     padding: 3%;
   }
 
+  .flex-container div a{
+    visibility: hidden;
+  }
+
   .flex-container div img{
     padding: 3%
   }
@@ -304,15 +312,16 @@ h2{
   .flex-container{
     flex-direction:row;
     flex-wrap: wrap;
-    justify-content: stretch;
     align-items: baseline;
+    justify-content: center;
   }
 
   .flex-container div{
     width: 30%;
     margin: 1%;
-    justify-content: start;
+    justify-content: center;
     align-content: space-between;
+    justify-items: center;
   }
 
   .flex-container div p{
@@ -320,8 +329,12 @@ h2{
     visibility: visible;
   }
 
-  .flex-container img{
+  .flex-container div img{
    float: inline-start;
+  }
+
+  .flex-container div a{
+    visibility: visible;
   }
 
 }
