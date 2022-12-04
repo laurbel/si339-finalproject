@@ -101,6 +101,10 @@ header{
   font-weight: 600px;
 }
 
+#current-page{
+  background-color: #83d9dc;
+}
+
 
 .flex-container{
   display:flex;
